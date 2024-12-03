@@ -1,17 +1,17 @@
 import os
 
-import src.utils.converter as converter
-import src.utils.general_utils as general_utils
+import scripts.utils.converter as converter
+import scripts.utils.general_utils as general_utils
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QMainWindow, QMessageBox
-from src.evaluators.coco_evaluator import get_coco_summary
-from src.evaluators.pascal_voc_evaluator import (get_pascalvoc_metrics, plot_precision_recall_curve,
+from scripts.evaluators.coco_evaluator import get_coco_summary
+from scripts.evaluators.pascal_voc_evaluator import (get_pascalvoc_metrics, plot_precision_recall_curve,
                                                  plot_precision_recall_curves)
-from src.ui.details import Details_Dialog
-from src.ui.main_ui import Ui_Dialog as Main_UI
-from src.ui.results import Results_Dialog
-from src.ui.splash import Splash_Dialog
-from src.utils.enumerators import BBFormat, BBType, CoordinatesType
+from scripts.ui.details import Details_Dialog
+from scripts.ui.main_ui import Ui_Dialog as Main_UI
+from scripts.ui.results import Results_Dialog
+from scripts.ui.splash import Splash_Dialog
+from scripts.utils.enumerators import BBFormat, BBType, CoordinatesType
 
 
 class Main_Dialog(QMainWindow, Main_UI):

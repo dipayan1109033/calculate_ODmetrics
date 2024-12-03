@@ -4,9 +4,9 @@
 
 from math import isclose
 
-import src.utils.converter as converter
-from src.evaluators.pascal_voc_evaluator import get_pascalvoc_metrics
-from src.utils.enumerators import BBType, MethodAveragePrecision
+import scripts.utils.converter as converter
+from scripts.evaluators.pascal_voc_evaluator import get_pascalvoc_metrics
+from scripts.utils.enumerators import BBType, MethodAveragePrecision
 
 
 def test_case_1():
